@@ -3,7 +3,8 @@ package src.aplicacion;
 import java.math.BigDecimal;
 import java.time.LocalDate;
 import src.dominio.*;
-    public class Principal{
+    public class
+    Principal{
         public static void main(String[] args){
             BandaMusica bd = new BandaMusica("Banda de Música de Villar del Monte");
             Actuacion act1 = new Actuacion(LocalDate.of(2019, 11, 25));

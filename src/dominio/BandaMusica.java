@@ -2,19 +2,24 @@ package src.dominio;
 import java.util.ArrayList;
 
 public class BandaMusica {
-    ArrayList<Actuacion> actuaciones= new ArrayList();
-    public String nombre;
+    private ArrayList<Actuacion> actuaciones= new ArrayList();
+    private String nombre;
+    private String mayuscula;
+
     public BandaMusica(String nombre){
         this.nombre = nombre;
+        mayuscula = nombre.toUpperCase();
 
     }
     public void annadirActuacion(Actuacion actuacion){
         actuaciones.add(actuacion);
 
     }
+
+    @Override
     public String toString (){
 
-        return nombre + "\n" + actuaciones.toString();
+        return mayuscula + "\n" + actuaciones.toString();
 
     }
 

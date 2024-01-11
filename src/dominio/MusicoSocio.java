@@ -1,12 +1,17 @@
 package src.dominio;
+import java.math.BigDecimal;
+import java.util.*;
 
 public class MusicoSocio extends Participante{
-    String instrumento;
-    int idSocio;
+    private String instrumento;
+    private int idSocio;
     public MusicoSocio(String nombre, String instrumento, int idSocio){
-        this.nombre = nombre;
+        super(nombre);
         this.instrumento = instrumento;
         this.idSocio = idSocio;
-
+    }
+    @Override
+    public String toString(){
+        return super.toString() + ", " + instrumento + ", numero de socio: " + idSocio+ "\n";
     }
 }

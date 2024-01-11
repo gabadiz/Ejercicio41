@@ -3,8 +3,8 @@ import java.time.LocalDate;
 import java.util.ArrayList;
 
 public class Actuacion {
-    ArrayList <Participante> participantes = new ArrayList();
-    LocalDate fecha;
+    private ArrayList <Participante> participantes = new ArrayList();
+    private LocalDate fecha;
     public Actuacion(LocalDate fecha){
         this.fecha = fecha;
 
@@ -12,8 +12,9 @@ public class Actuacion {
     public void annadirParticipante(Participante participante){
         participantes.add(participante);
     }
+    @Override
     public String toString (){
-        return fecha.toString() + "\n" + participantes.toString();
+        return "Fecha de actuación: "+fecha.toString() + "\n" + participantes.toString()+"\n";
     }
 
 }
